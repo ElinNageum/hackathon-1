@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+/* Left side styling: Logo + Grocery */
+.top-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-left img {
+  height: 40px;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.top-bar-text {
+  color: #3BB77E;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Right side styling: User icon inside a grey circle */
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon-circle {
+  background-color: #D9D9D9; /* Grey background for circle */
+  border-radius: 50%; /* Make it a circle */
+  padding: 10px; /* Add padding to fit the icon nicely */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between; /* Evenly space the menu items */
+  background-color: #F1F1F1; /* Background color for the menu bar */
+  border-radius: 50px; /* Fully rounded caps */
+  margin: 40px;
+  padding: 10px;
+  width: fit-content;
+}
+
+
+.menu-item {
+  padding: 10px 40px; /* Reduce padding for each menu item */
+  border-radius: 50px; /* Fully rounded caps for the menu items */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition effect */
+  font-size: 20px;
+}
+
+/* Style for the selected menu item */
+.selected {
+  background-color: white; /* Background color for the selected item */
+  border-radius: 50px; /* Fully rounded caps */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); Optional shadow for the selected item */
+}
+
+.content {
+  margin: 0px 40px; /* Margin around the entire section */
+  font-family: Arial, sans-serif; /* Set font to Arial */
+}
+
+/* Style for the large heading in the Personalize section */
+.personalize-title {
+  font-size: 40px; /* Font size for the title */
+  font-weight: bold; /* Optional: Make the text bold */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.menu-descriptor {
+  font-size: 20px;
+  color: #5E5E5E;
+  margin: 20px 0px;
+}
+
+.personalize-select-container {
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.personalize-select-item {
+  font-size: 20px;
+  border-radius: 5px; /* Add 'px' for pixel value */
+  background-color: #F4F4F4; /* Default background color */
+  padding: 10px 20px;
+  width: fit-content;
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.personalize-select-item.selected {
+  background-color: #3BB77E; /* Change to the desired selected background color */
+  color: white; /* Optional: Change text color for contrast */
+}
+
+.custom-recipe-input {
+  width: 700px; /* Full width of the container */
+  padding: 10px; /* Padding for input */
+  margin: 0px 0px; /* Space above the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 20px; /* Font size */
+}
+
+/* Optional: Add focus effect */
+.custom-recipe-input:focus {
+  border-color: #3BB77E; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.next-button-container {
+  text-align: left; /* Align button to the right */
+  margin-top: 20px; /* Space between input and button */
+}
+
+.next-button {
+  background-color: #3BB77E; /* Button background */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 20px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.next-button:hover {
+  background-color: #32a76c; /* Darker green on hover */
+}
+
+.review-toggle-container {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.review-toggle-item {
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
+.review-toggle-item.selected {
+  background-color: #3BB77E;
+  color: white;
+  border-color: #3BB77E;
+}
+
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recipe-container {
+  display: flex;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  
+}
+
+.recipe-container.selected {
+  background-color: #D9D9D9; /* Selected recipe color */
+}
+
+
+.recipe-text {
+  font-size: 20px;
+}
+
+.recipe-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recipe-description {
+
+}
+
+.recipe-picture {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
